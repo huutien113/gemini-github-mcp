@@ -3,14 +3,14 @@ import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
 import { createRequire } from "module";
 
 const require = createRequire(import.meta.url);
-// Nạp chính xác lớp cấu hình từ gói cài đặt gốc
-const { GitHubServer } = require("@modelcontextprotocol/server-github/dist/index.js");
+// Gói này xuất khẩu mặc định (export default) chính là class Server
+const Server = require("@modelcontextprotocol/server-github");
 
 const app = express();
 const port = process.env.PORT || 10000;
 
-// Khởi tạo máy chủ GitHub MCP chính thức
-const githubServer = new GitHubServer();
+// Khởi tạo máy chủ bằng lớp Server mặc định của họ
+const githubServer = new Server();
 
 let sseTransport = null;
 
