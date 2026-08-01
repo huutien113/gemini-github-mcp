@@ -1,10 +1,13 @@
 {
   "name": "gemini-github-mcp-server",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "start": "npx -y @modelcontextprotocol/server-github"
+    "start": "node index.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/server-github": "^0.6.0"
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "@modelcontextprotocol/server-github": "^0.6.0",
+    "express": "^4.21.0"
   }
 }
