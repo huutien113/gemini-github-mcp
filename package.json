@@ -2,7 +2,7 @@
   "name": "gemini-github-mcp-server",
   "version": "1.0.0",
   "scripts": {
-    "start": "node node_modules/@modelcontextprotocol/server-github/dist/index.js"
+    "start": "npx -y @modelcontextprotocol/server-github"
   },
   "dependencies": {
     "@modelcontextprotocol/server-github": "^0.6.0"
