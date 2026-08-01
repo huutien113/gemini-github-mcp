@@ -2,10 +2,9 @@
   "name": "gemini-github-mcp-server",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx mcp-proxy --port 10000 node node_modules/@modelcontextprotocol/server-github/dist/index.js"
+    "start": "node node_modules/@modelcontextprotocol/server-github/dist/index.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/server-github": "^0.6.0",
-    "mcp-proxy": "^1.1.0"
+    "@modelcontextprotocol/server-github": "^0.6.0"
   }
 }
