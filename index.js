@@ -1,11 +1,11 @@
 import express from "express";
 import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
-import { GitHubServer } from "@modelcontextprotocol/server-github";
+import { GitHubServer } from "./node_modules/@modelcontextprotocol/server-github/dist/index.js";
 
 const app = express();
 const port = process.env.PORT || 10000;
 
-// Khởi tạo máy chủ GitHub MCP chính thức từ thư viện công cụ
+// Khởi tạo máy chủ GitHub MCP chính thức từ tệp phân phối chuẩn
 const githubServer = new GitHubServer();
 
 let sseTransport = null;
